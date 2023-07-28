@@ -11,34 +11,34 @@ public class PinCodeTextField: UITextField {
     static let defaultBorderHeight: CGFloat = 4
     static let defaultBordersSpacing: CGFloat = 10
 
-    @IBInspectable var digitsCount: UInt = 4 {
+    @IBInspectable public var digitsCount: UInt = 4 {
         didSet {
             clearText()
             setupBorders()
         }
     }
 
-    @IBInspectable var borderHeight: CGFloat = 4 {
+    @IBInspectable public var borderHeight: CGFloat = 4 {
         didSet {
             clearText()
             setupBorders()
         }
     }
 
-    @IBInspectable var bordersSpacing: CGFloat = 10 {
+    @IBInspectable public var bordersSpacing: CGFloat = 10 {
         didSet {
             clearText()
             layoutIfNeeded()
         }
     }
 
-    @IBInspectable var filledDigitBorderColor: UIColor = .lightGray {
+    @IBInspectable public var filledDigitBorderColor: UIColor = .lightGray {
         didSet {
             configureBorderColors()
         }
     }
 
-    @IBInspectable var emptyDigitBorderColor: UIColor = .red {
+    @IBInspectable public var emptyDigitBorderColor: UIColor = .red {
         didSet {
             configureBorderColors()
         }
