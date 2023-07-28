@@ -1,4 +1,4 @@
-# PinCodeTextFiled
+# PinCodeTextField
 
 A customizable code textField. Can be used for phone verification codes, passwords etc.
 
